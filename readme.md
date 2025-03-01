@@ -57,12 +57,6 @@ pip install torch gensim
 
 ---
 
-## **Usage**
-To run the model, simply execute the Python script. The positional embeddings will be updated during training, and the model will output the **final positional embeddings** after 20 epochs.
-
-```bash
-python learnable_positional_embeddings.py
-```
 
 ## **Conclusion**
 - This project showcases how **learnable positional embeddings** can be trained along with word embeddings to improve the model's understanding of word order and positional context in a sequence.
