@@ -42,18 +42,16 @@ pip install torch gensim
    positional_embeddings = nn.Parameter(torch.zeros_like(word_embeddings, requires_grad=True))
    ```
 
-3. **Combining Word and Positional Embeddings:**
-   The word embeddings and the positional embeddings are added together to create the final embedding that the model will work with.
+3. **Training:**
+   - Combining Word and Positional Embeddings: The word embeddings and the positional embeddings are added together to create the final embedding that the model will work with.
    ```python
    combined_embeddings = word_embeddings + positional_embeddings
    ```
-
-4. **Training:**
    - The model is trained using **stochastic gradient descent (SGD)**.
    - The loss is computed using the **Mean Squared Error (MSE)** between the predicted output and the true values (`y_true`).
    - The optimizer updates the positional embeddings based on the gradients computed during backpropagation.
    
-5. **Output:** The loss for each epoch is printed, showing how the model learns and improves its positional embeddings over time.
+4. **Output:** The loss for each epoch is printed, showing how the model learns and improves its positional embeddings over time.
 
 ---
 
